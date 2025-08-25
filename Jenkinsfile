@@ -32,7 +32,7 @@ pipeline  {
             steps {
                 echo " ============== Run webserer  =================="
                 sh '''
-                docker rm -f webserver || true
+                docker rm -f test_1 || true
                 docker run -d --name=test_1 --restart=always -p 5000:5000  ish337/test_project_1
                 '''
             }
