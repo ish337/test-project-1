@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лічильник</title>
+</head>
+<body>
+    <h1>Поточне значення: {{ count }}</h1>
+    <form action="{{ url_for('increment') }}" method="post">
+        <button type="submit">+1</button>
+    </form>
+</body>
+</html>
+
